@@ -19,10 +19,10 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 
 
 		if [[ $dark_mode == true ]]; then
-			echo "setting dark"
+			echo "Setting iTerm Profile to dark"
 			set_iterm_profile_dark
 		else
-			echo "setting default"
+			echo "Setting iTerm Profile to default"
 			set_iterm_profile_default
 		fi
 	}
