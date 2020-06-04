@@ -29,3 +29,6 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 
 	iterm_color_match_system
 fi 
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
