@@ -5,5 +5,5 @@ alias ll='ls -lh --time-style=long-iso --group-directories-first'
 alias la='ll -a'
 
 # Python virtual environments
-alias cve="python -m venv venv"
-alias ave="source venv/bin/activate"
+alias cve="python -m venv .venv"
+alias ave="source .venv/bin/activate"
