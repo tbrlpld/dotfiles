@@ -1,7 +1,7 @@
 # iTerm Profile switch according to MacOS Dark Mode.
-# The iTerm Profile need to be called "Default" and "Dark". 
+# The iTerm Profile need to be called "Default" and "Dark".
 if [[ "$(uname -s)" == "Darwin" ]]; then
-	
+
 	set_iterm_profile_default() {
 		echo -ne "\033]50;SetProfile=Default\a"
 		export $ITERM_PROFILE="Default"
@@ -19,16 +19,16 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 
 
 		if [[ $dark_mode == true ]]; then
-			echo "Setting iTerm Profile to dark"
+			# echo "Setting iTerm Profile to dark"
 			set_iterm_profile_dark
 		else
-			echo "Setting iTerm Profile to default"
+			# echo "Setting iTerm Profile to default"
 			set_iterm_profile_default
 		fi
 	}
 
 	iterm_color_match_system
-fi 
+fi
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
