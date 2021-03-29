@@ -5,6 +5,3 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Poetry 
 export PATH="$HOME/.poetry/bin:$PATH"
-
-# Ruby
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH" 
