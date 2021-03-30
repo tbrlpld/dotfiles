@@ -1,6 +1,5 @@
-# alias ls='ls -FG' # F - extended markup (/ after directory, * after executable), G - colorized output.
+alias ls='ls -GF' # F - extended markup (/ after directory, * after executable), G - colorized output.
 # alias ll='ls -lh' # h - human readable file sizes
-alias ls='/usr/local/bin/gls -p --color'
 alias ll='ls -lh --time-style=long-iso --group-directories-first'
 alias la='ll -a'
 
