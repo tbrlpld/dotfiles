@@ -1,6 +1,5 @@
 # Homebrew Install Caveats
 
-
 # For compilers to find libffi you may need to set:
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 export CPPFLAGS="-I/usr/local/opt/libffi/include"
@@ -25,3 +24,8 @@ export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 # For pkg-config to find sqlite you may need to set:
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
