@@ -3,5 +3,8 @@ export PATH="$PATH:$HOME/.local/bin" # Created by `userpath` on 2019-11-23 05:15
 
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# Poetry 
+# Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# Heroku
+export PATH="/usr/local/opt/heroku-node/bin:$PATH"
