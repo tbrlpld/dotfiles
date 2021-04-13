@@ -34,4 +34,4 @@ export NVM_DIR="$HOME/.nvm"
 # m4 is keg-only, which means it was not symlinked into /usr/local,
 # because macOS already provides this software and installing another version in
 # parallel can cause all kinds of trouble.
-export PATH="/usr/local/opt/m4/bin:$PATH"'
+export PATH="/usr/local/opt/m4/bin:$PATH"
