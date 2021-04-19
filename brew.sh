@@ -35,3 +35,24 @@ export NVM_DIR="$HOME/.nvm"
 # because macOS already provides this software and installing another version in
 # parallel can cause all kinds of trouble.
 export PATH="/usr/local/opt/m4/bin:$PATH"
+
+# # icu4c is keg-only, which means it was not symlinked into /usr/local,
+# # because macOS provides libicucore.dylib (but nothing else).
+# export PATH="/usr/local/opt/icu4c/bin:$PATH"
+# export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+# # For compilers to find icu4c you may need to set:
+# export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+# export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+# # For pkg-config to find icu4c you may need to set:
+# export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+# # krb5 is keg-only, which means it was not symlinked into /usr/local,
+# # because macOS already provides this software and installing another version in
+# # parallel can cause all kinds of trouble.
+# export PATH="/usr/local/opt/krb5/bin:$PATH"
+# export PATH="/usr/local/opt/krb5/sbin:$PATH"
+# # For compilers to find krb5 you may need to set:
+# export LDFLAGS="-L/usr/local/opt/krb5/lib"
+# export CPPFLAGS="-I/usr/local/opt/krb5/include"
+# # For pkg-config to find krb5 you may need to set:
+# export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig"
