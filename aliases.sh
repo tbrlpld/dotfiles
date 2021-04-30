@@ -4,5 +4,5 @@ alias ll='ls -lh' # h - human readable file sizes
 alias la='ll -a'
 
 # Python virtual environments
-alias cve="python -m venv env"
-alias ave="source env/bin/activate"
+alias cve="python -m venv .venv"
+alias ave="source .venv/bin/activate"
