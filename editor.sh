@@ -1,3 +1,3 @@
 # Standard Editor
-export EDITOR='subl -w'
+export EDITOR='/use/bin/vim'
 export VISUAL='/usr/bin/nano'
