@@ -11,7 +11,7 @@ set nolist
 set foldmethod=indent
 set foldlevel=2
 set nofoldenable  " ensure file is not folded when opening
-set clipboard=unnamed  " yank and past will use system clipboard
+set clipboard=unnamed  " yank and paste will use system clipboard
 
 " Trim trailin whitespace
 function TrimWhiteSpace()
