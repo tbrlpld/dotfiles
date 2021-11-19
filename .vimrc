@@ -1,5 +1,5 @@
 syntax on
-colorscheme desert
+colorscheme peachpuff
 set number
 set ic
 set expandtab
