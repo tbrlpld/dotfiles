@@ -1,5 +1,6 @@
 syntax on
-colorscheme peachpuff
+colorscheme delek
+hi StatusLine ctermbg=black
 set number
 set ic
 set expandtab
