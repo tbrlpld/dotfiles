@@ -1,6 +1,3 @@
-syntax on
-colorscheme delek
-hi StatusLine ctermbg=black
 set number
 set ic
 set expandtab
@@ -14,6 +11,12 @@ set foldmethod=indent
 set foldlevel=2
 set nofoldenable  " ensure file is not folded when opening
 set clipboard=unnamed  " yank and paste will use system clipboard
+
+" Colors
+syntax on
+hi Include ctermfg=1 cterm=bold
+hi pythonFunction ctermfg=3 cterm=bold
+hi Identifier ctermfg=12
 
 " Trim trailin whitespace
 function TrimWhiteSpace()
