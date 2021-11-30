@@ -17,7 +17,7 @@ let g:python_highlight_all = 1
 " Colors
 syntax on
 hi Include ctermfg=1 cterm=bold
-" hi pythonFunction ctermfg=3 cterm=bold
+hi pythonFunctionCall ctermfg=11
 hi Identifier ctermfg=12
 
 " Trim trailin whitespace
