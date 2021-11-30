@@ -12,10 +12,12 @@ set foldlevel=2
 set nofoldenable  " ensure file is not folded when opening
 set clipboard=unnamed  " yank and paste will use system clipboard
 
+let g:python_highlight_all = 1
+
 " Colors
 syntax on
 hi Include ctermfg=1 cterm=bold
-hi pythonFunction ctermfg=3 cterm=bold
+" hi pythonFunction ctermfg=3 cterm=bold
 hi Identifier ctermfg=12
 
 " Trim trailin whitespace
@@ -35,4 +37,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
+Plug 'vim-python/python-syntax'
 call plug#end()
+
