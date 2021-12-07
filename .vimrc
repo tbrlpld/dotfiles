@@ -11,13 +11,14 @@ set foldmethod=indent
 set foldlevel=2
 set nofoldenable  " ensure file is not folded when opening
 set clipboard=unnamed  " yank and paste will use system clipboard
-
+set cursorline
 
 " Colors
 syntax on
 hi Include ctermfg=1 cterm=bold
 hi pythonFunctionCall ctermfg=11
 hi Identifier ctermfg=12
+hi CursorLine ctermbg=239 cterm=none
 
 " Trim trailin whitespace
 function TrimWhiteSpace()
