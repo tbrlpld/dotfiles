@@ -37,6 +37,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
 Plug 'vim-python/python-syntax'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 let g:python_highlight_all = 1
