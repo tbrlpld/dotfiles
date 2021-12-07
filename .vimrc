@@ -40,6 +40,7 @@ Plug 'vim-python/python-syntax'
 call plug#end()
 
 let g:python_highlight_all = 1
-" Set default supertab completion to omni completion. This is a bit more
-" context aware then the default keyword completion.
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+" Set default supertab completion to be context aware.
+" This tries the omni completionm but also falls back to local keyword
+" completion.
+let g:SuperTabDefaultCompletionType = 'context'
