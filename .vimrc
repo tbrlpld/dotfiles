@@ -12,7 +12,6 @@ set foldlevel=2
 set nofoldenable  " ensure file is not folded when opening
 set clipboard=unnamed  " yank and paste will use system clipboard
 
-let g:python_highlight_all = 1
 
 " Colors
 syntax on
@@ -40,3 +39,7 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-python/python-syntax'
 call plug#end()
 
+let g:python_highlight_all = 1
+" Set default supertab completion to omni completion. This is a bit more
+" context aware then the default keyword completion.
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
