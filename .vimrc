@@ -37,8 +37,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
-Plug 'vim-python/python-syntax'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'vim-python/python-syntax'
 call plug#end()
 
 let g:python_highlight_all = 1
