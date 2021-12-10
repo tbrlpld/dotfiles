@@ -1,3 +1,23 @@
+" Plugins (install with vim-plug: https://github.com/junegunn/vim-plug)
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-commentary'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'vim-python/python-syntax'
+Plug 'blueyed/vim-diminactive'
+call plug#end()
+
+let g:python_highlight_all = 1
+" Set default supertab completion to be context aware.
+" This tries the omni completionm but also falls back to local keyword
+" completion.
+let g:SuperTabDefaultCompletionType = 'context'
+
 set number
 set ic
 set expandtab
@@ -18,7 +38,9 @@ syntax on
 hi Include ctermfg=1 cterm=bold
 hi pythonFunctionCall ctermfg=11
 hi Identifier ctermfg=12
-hi CursorLine ctermbg=239 cterm=none
+" Darken active line and inactive windows.
+hi CursorLine ctermbg=16 cterm=none
+hi ColorColumn ctermbg=16
 
 " Trim trailin whitespace
 function TrimWhiteSpace()
@@ -29,22 +51,3 @@ autocmd FileWritePre * call TrimWhiteSpace()
 autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
-
-" Plugins (install with vim-plug: https://github.com/junegunn/vim-plug)
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-commentary'
-Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'vim-python/python-syntax'
-call plug#end()
-
-let g:python_highlight_all = 1
-" Set default supertab completion to be context aware.
-" This tries the omni completionm but also falls back to local keyword
-" completion.
-let g:SuperTabDefaultCompletionType = 'context'
