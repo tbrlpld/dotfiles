@@ -1,14 +1,15 @@
 " Plugins (install with vim-plug: https://github.com/junegunn/vim-plug)
 call plug#begin('~/.vim/plugged')
+Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
+" Language support
 Plug 'othree/html5.vim'
+Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'vim-python/python-syntax'
 Plug 'blueyed/vim-diminactive'
 call plug#end()
 
@@ -47,7 +48,14 @@ function TrimWhiteSpace()
   %s/\s*$//
   ''
 endfunction
+
 autocmd FileWritePre * call TrimWhiteSpace()
 autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
+
+" Omni complete: http://blog.fluther.com/django-vim/
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python set omnifunc=pythoncomplete#Complete
