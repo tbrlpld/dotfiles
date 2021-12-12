@@ -5,6 +5,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
+Plug 'mattn/emmet-vim'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'vim-python/python-syntax'
