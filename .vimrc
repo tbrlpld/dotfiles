@@ -1,11 +1,12 @@
 " Plugins (install with vim-plug: https://github.com/junegunn/vim-plug)
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
+Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
-Plug 'mattn/emmet-vim'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'vim-python/python-syntax'
