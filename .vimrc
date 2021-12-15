@@ -15,6 +15,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'blueyed/vim-diminactive'
 call plug#end()
 
+let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
 let g:python_highlight_all = 1
 " Set default supertab completion to be context aware.
 " This tries the omni completionm but also falls back to local keyword
