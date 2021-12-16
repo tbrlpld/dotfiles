@@ -6,9 +6,12 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'ervandew/supertab'
+Plug 'sirver/UltiSnips'
+Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 " Language support
 Plug 'othree/html5.vim'
+Plug 'tweekmonster/django-plus.vim'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -16,10 +19,14 @@ Plug 'blueyed/vim-diminactive'
 call plug#end()
 
 let g:python_highlight_all = 1
+let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
 " Set default supertab completion to be context aware.
 " This tries the omni completionm but also falls back to local keyword
 " completion.
 let g:SuperTabDefaultCompletionType = 'context'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+
 
 set number
 set ic
@@ -55,10 +62,10 @@ autocmd FileWritePre * call TrimWhiteSpace()
 autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
-au BufRead,BufNewFile *.html set filetype=htmldjango
+" au BufRead,BufNewFile *.html set filetype=htmldjango
 
 " Omni complete: http://blog.fluther.com/django-vim/
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
