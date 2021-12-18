@@ -1,4 +1,8 @@
-# Homebrew Install Caveats
+# Homebrew
+
+export PATH="/usr/local/sbin:$PATH"
+
+# Install Caveats
 
 # # For compilers to find libffi you may need to set:
 # export LDFLAGS="-L/usr/local/opt/libffi/lib"
