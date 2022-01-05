@@ -38,7 +38,7 @@ set nowrap
 set listchars=eol:¬,tab:>·,trail:~,extends:…,precedes:…,space:⋅
 set nolist
 set foldmethod=indent
-set foldlevel=2
+set foldlevel=1
 set nofoldenable  " ensure file is not folded when opening
 set clipboard=unnamed  " yank and paste will use system clipboard
 set cursorline
