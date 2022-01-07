@@ -9,6 +9,7 @@ Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
+Plug 'arcticicestudio/nord-vim'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'tweekmonster/django-plus.vim'
@@ -47,12 +48,13 @@ set cursorline
 
 " Colors
 syntax on
-hi Include ctermfg=1 cterm=bold
-hi pythonFunctionCall ctermfg=11
-hi Identifier ctermfg=12
-" Darken active line and inactive windows.
-hi CursorLine ctermbg=16 cterm=none
-hi ColorColumn ctermbg=16
+colorscheme nord
+" hi Include ctermfg=1 cterm=bold
+hi pythonFunctionCall ctermfg=3
+hi Identifier ctermfg=9
+" " Darken active line and inactive windows.
+" hi CursorLine ctermbg=16 cterm=none
+" hi ColorColumn ctermbg=16
 
 " Trim trailin whitespace
 function TrimWhiteSpace()
