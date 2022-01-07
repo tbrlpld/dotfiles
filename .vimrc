@@ -55,6 +55,8 @@ hi Identifier ctermfg=9
 hi Statement cterm=bold
 hi Conditional cterm=bold
 hi Exception cterm=bold
+hi Function ctermfg=5
+hi Operator ctermfg=13
 " " Darken active line and inactive windows.
 " hi CursorLine ctermbg=16 cterm=none
 " hi ColorColumn ctermbg=16
