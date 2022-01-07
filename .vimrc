@@ -52,6 +52,9 @@ colorscheme nord
 " hi Include ctermfg=1 cterm=bold
 hi pythonFunctionCall ctermfg=3
 hi Identifier ctermfg=9
+hi Statement cterm=bold
+hi Conditional cterm=bold
+hi Exception cterm=bold
 " " Darken active line and inactive windows.
 " hi CursorLine ctermbg=16 cterm=none
 " hi ColorColumn ctermbg=16
