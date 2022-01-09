@@ -52,7 +52,7 @@ colorscheme nord
 " hi Include ctermfg=1 cterm=bold
 hi pythonFunctionCall ctermfg=3
 hi Identifier ctermfg=9
-hi Statement cterm=bold
+hi Statement ctermfg=1
 hi Conditional cterm=bold
 hi Exception cterm=bold
 hi Function ctermfg=5
