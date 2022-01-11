@@ -19,32 +19,43 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'blueyed/vim-diminactive'
 call plug#end()
 
-let g:python_highlight_all = 1
-if has('nvim')
-    let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
-endif
-" Set default supertab completion to be context aware.
-" This tries the omni completionm but also falls back to local keyword
-" completion.
-let g:SuperTabDefaultCompletionType = 'context'
-
-let g:UltiSnipsExpandTrigger="<tab>"
-
-
-set number
-set ic
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set fixendofline
-set nowrap
-set listchars=eol:¬,tab:>·,trail:~,extends:…,precedes:…,space:⋅
-set nolist
-set foldmethod=indent
-set foldlevel=1
-set nofoldenable  " ensure file is not folded when opening
-set clipboard=unnamed  " yank and paste will use system clipboard
+set nocompatible " from garybernhardt
+set autoindent
+set autoread
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backspace=indent,eol,start
 set cursorline
+set clipboard=unnamed  " yank and paste will use system clipboard
+set cmdheight=1
+set completeopt=menu,preview
+set diffopt=vertical
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set expandtab
+set fixendofline
+set foldmethod=manual
+set ic
+set incsearch
+set ignorecase smartcase
+set hidden
+set hlsearch
+set listchars=eol:¬,tab:>·,trail:~,extends:…,precedes:…,space:⋅
+set nobackup
+set nojoinspaces " Insert only one space when joining lines that contain sentence-terminating punctuation like `.`.
+set nofoldenable  " ensure file is not folded when opening
+set nowritebackup
+set nolist
+set nowrap
+set number
+set signcolumn=no
+set scrolloff=3
+set shiftwidth=4
+set showcmd
+set showtabline=2
+set softtabstop=4
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set switchbuf=usetab
+set tabstop=4
+set wildmenu " make tab completion for files/buffers act like bash
 
 " Colors
 syntax on
@@ -61,6 +72,17 @@ hi Operator ctermfg=13
 " hi CursorLine ctermbg=16 cterm=none
 " hi ColorColumn ctermbg=16
 
+let g:python_highlight_all = 1
+if has('nvim')
+    let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
+endif
+
+" Set default supertab completion to be context aware.
+" This tries the omni completionm but also falls back to local keyword
+" completion.
+let g:SuperTabDefaultCompletionType = 'context'
+let g:UltiSnipsExpandTrigger="<tab>"
+
 " Trim trailin whitespace
 function TrimWhiteSpace()
   %s/\s*$//
@@ -71,7 +93,19 @@ autocmd FileWritePre * call TrimWhiteSpace()
 autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
-" au BufRead,BufNewFile *.html set filetype=htmldjango
+
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call RenameFile()<cr>
+
+autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 
 " Omni complete: http://blog.fluther.com/django-vim/
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
