@@ -38,6 +38,7 @@ set incsearch
 set ignorecase smartcase
 set hidden
 set hlsearch
+set laststatus=2
 set listchars=eol:¬,tab:>·,trail:~,extends:…,precedes:…,space:⋅
 set nobackup
 set nojoinspaces " Insert only one space when joining lines that contain sentence-terminating punctuation like `.`.
