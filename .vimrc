@@ -72,6 +72,9 @@ hi Operator ctermfg=13
 " " Darken active line and inactive windows.
 " hi CursorLine ctermbg=16 cterm=none
 " hi ColorColumn ctermbg=16
+hi TabLine ctermfg=16 ctermbg=8
+hi TabLineFill ctermbg=8
+hi TabLineSel ctermfg=6 ctermbg=none
 
 let g:python_highlight_all = 1
 if has('nvim')
