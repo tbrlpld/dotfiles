@@ -10,3 +10,6 @@ export PIP_REQUIRE_VIRTUALENV=true
 # Pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Use pyenv controlled python3 for pipx.
+export PIPX_DEFAULT_PYTHON=$(pyenv which python3)
