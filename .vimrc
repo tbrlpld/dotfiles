@@ -87,16 +87,12 @@ endif
 let g:SuperTabDefaultCompletionType = 'context'
 let g:UltiSnipsExpandTrigger="<tab>"
 
+" FUNCTIONS
 " Trim trailin whitespace
 function TrimWhiteSpace()
   %s/\s*$//
   ''
 endfunction
-
-autocmd FileWritePre * call TrimWhiteSpace()
-autocmd FileAppendPre * call TrimWhiteSpace()
-autocmd FilterWritePre * call TrimWhiteSpace()
-autocmd BufWritePre * call TrimWhiteSpace()
 
 function! RenameFile()
     let old_name = expand('%')
@@ -107,7 +103,12 @@ function! RenameFile()
         redraw!
     endif
 endfunction
-map <leader>n :call RenameFile()<cr>
+
+" AUTO COMMANDS
+autocmd FileWritePre * call TrimWhiteSpace()
+autocmd FileAppendPre * call TrimWhiteSpace()
+autocmd FilterWritePre * call TrimWhiteSpace()
+autocmd BufWritePre * call TrimWhiteSpace()
 
 autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 
@@ -116,3 +117,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
+" KEY MAPS
+map <leader>n :call RenameFile()<cr>
+map <leader>t :NERDTreeFind % <cr>
