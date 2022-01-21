@@ -5,11 +5,11 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
+Plug 'arcticicestudio/nord-vim'
 Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
-Plug 'arcticicestudio/nord-vim'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'tweekmonster/django-plus.vim'
@@ -60,21 +60,27 @@ set wildmenu " make tab completion for files/buffers act like bash
 
 " Colors
 syntax on
-colorscheme nord
-" hi Include ctermfg=1 cterm=bold
-hi pythonFunctionCall ctermfg=3
-hi Identifier ctermfg=9
-hi Statement ctermfg=1
-hi Conditional cterm=bold
-hi Exception cterm=bold
-hi Function ctermfg=5
-hi Operator ctermfg=13
-" " Darken active line and inactive windows.
-" hi CursorLine ctermbg=16 cterm=none
-" hi ColorColumn ctermbg=16
-hi TabLine ctermfg=16 ctermbg=8
-hi TabLineFill ctermbg=8
-hi TabLineSel ctermfg=6 ctermbg=none
+function ActivateNordColor()
+    colorscheme nord
+    " hi Include ctermfg=1 cterm=bold
+    hi pythonFunctionCall ctermfg=3
+    hi Identifier ctermfg=9
+    hi Statement ctermfg=1
+    hi Conditional cterm=bold
+    hi Exception cterm=bold
+    hi Function ctermfg=5
+    hi Operator ctermfg=13
+    " " Darken active line and inactive windows.
+    " hi CursorLine ctermbg=16 cterm=none
+    " hi ColorColumn ctermbg=16
+    hi TabLine ctermfg=16 ctermbg=8
+    hi TabLineFill ctermbg=8
+    hi TabLineSel ctermfg=6 ctermbg=none
+endfunction
+function ActivateAyuColor()
+    colorscheme default
+    hi Visual cterm=reverse
+endfunction
 
 let g:python_highlight_all = 1
 if has('nvim')
