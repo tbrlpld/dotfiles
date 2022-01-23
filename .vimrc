@@ -78,6 +78,16 @@ function ConfigureForNordTerminalColor()
     hi TabLineSel ctermfg=6 ctermbg=none
 endfunction
 function ConfigureForAyuLightTerminalColor()
+    colorscheme nord
+    hi pythonFunctionCall ctermfg=3
+    hi Identifier ctermfg=9
+    hi Statement ctermfg=1
+    hi Conditional cterm=bold
+    hi Exception cterm=bold
+    hi Function ctermfg=3
+    hi Operator ctermfg=13
+    hi Delimiter ctermfg=13
+    hi Comment ctermfg=6
     hi CursorLine ctermbg=255 cterm=none
     hi ColorColumn ctermbg=255
     hi Visual ctermbg=254
@@ -88,8 +98,9 @@ function ConfigureForAyuLightTerminalColor()
     hi StatusLineNC ctermbg=254 ctermfg=none cterm=none
     hi LineNr ctermfg=248
     hi ErrorMsg ctermfg=15
+    hi htmlArg ctermfg=6
 endfunction
-call ConfigureForNordTerminalColor()
+call ConfigureForAyuLightTerminalColor()
 
 let g:python_highlight_all = 1
 if has('nvim')
