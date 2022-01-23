@@ -87,6 +87,7 @@ function ConfigureForAyuLightTerminalColor()
     hi StatusLine ctermbg=254 ctermfg=none cterm=bold
     hi StatusLineNC ctermbg=254 ctermfg=none cterm=none
     hi LineNr ctermfg=248
+    hi ErrorMsg ctermfg=15
 endfunction
 call ConfigureForNordTerminalColor()
 
