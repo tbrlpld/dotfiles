@@ -60,7 +60,7 @@ set wildmenu " make tab completion for files/buffers act like bash
 " Colors
 syntax on
 colorscheme default
-function ActivateNordColor()
+function ConfigureForNordTerminalColor()
     colorscheme nord
     " hi Include ctermfg=1 cterm=bold
     hi pythonFunctionCall ctermfg=3
@@ -77,12 +77,18 @@ function ActivateNordColor()
     hi TabLineFill ctermbg=8
     hi TabLineSel ctermfg=6 ctermbg=none
 endfunction
-function ActivateAyuColor()
-    colorscheme default
-    hi CursorLine ctermbg=14 cterm=none
-    hi Visual ctermbg=13
+function ConfigureForAyuLightTerminalColor()
+    hi CursorLine ctermbg=255 cterm=none
+    hi ColorColumn ctermbg=255
+    hi Visual ctermbg=254
+    hi TabLineSel ctermbg=none ctermfg=none cterm=bold
+    hi TabLine ctermbg=254 ctermfg=none
+    hi TabLineFill ctermbg=254
+    hi StatusLine ctermbg=254 ctermfg=none cterm=bold
+    hi StatusLineNC ctermbg=254 ctermfg=none cterm=none
+    hi LineNr ctermfg=248
 endfunction
-call ActivateNordColor()
+call ConfigureForNordTerminalColor()
 
 let g:python_highlight_all = 1
 if has('nvim')
