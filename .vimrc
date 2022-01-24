@@ -102,6 +102,9 @@ function ConfigureForAyuLightTerminalColor()
     hi htmlArg ctermfg=6
     hi djangoArgument ctermfg=4
     hi djangoStatement ctermfg=2
+    hi markdownCode ctermfg=3
+    hi markdownCodeBlock ctermfg=3
+    hi markdownCodeDelimiter ctermfg=4
     hi NERDTreeExecFile ctermfg=3
 endfunction
 call ConfigureForAyuLightTerminalColor()
