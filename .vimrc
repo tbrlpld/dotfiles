@@ -100,6 +100,7 @@ function ConfigureForAyuLightTerminalColor()
     hi ErrorMsg ctermfg=15
     hi htmlArg ctermfg=6
     hi djangoStatement ctermfg=2
+    hi NERDTreeExecFile ctermfg=3
 endfunction
 call ConfigureForAyuLightTerminalColor()
 
