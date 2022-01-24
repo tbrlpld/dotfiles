@@ -99,6 +99,7 @@ function ConfigureForAyuLightTerminalColor()
     hi LineNr ctermfg=248
     hi ErrorMsg ctermfg=15
     hi htmlArg ctermfg=6
+    hi djangoStatement ctermfg=2
 endfunction
 call ConfigureForAyuLightTerminalColor()
 
