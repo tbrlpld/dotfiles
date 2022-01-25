@@ -91,6 +91,7 @@ function ConfigureForAyuLightTerminalColor()
     hi CursorLine ctermbg=255 cterm=none
     hi ColorColumn ctermbg=255
     hi Visual ctermbg=254
+    hi PreProc ctermfg=none
     hi TabLineSel ctermbg=none ctermfg=none cterm=bold
     hi TabLine ctermbg=254 ctermfg=none
     hi TabLineFill ctermbg=254
@@ -99,6 +100,7 @@ function ConfigureForAyuLightTerminalColor()
     hi LineNr ctermfg=248
     hi ErrorMsg ctermfg=15
     hi htmlArg ctermfg=6
+    hi djangoArgument ctermfg=4
     hi djangoStatement ctermfg=2
     hi NERDTreeExecFile ctermfg=3
 endfunction
