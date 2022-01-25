@@ -107,7 +107,7 @@ function ConfigureForAyuLightTerminalColor()
     hi markdownCodeDelimiter ctermfg=4
     hi NERDTreeExecFile ctermfg=3
 endfunction
-call ConfigureForAyuLightTerminalColor()
+"call ConfigureForAyuLightTerminalColor()
 
 let g:python_highlight_all = 1
 if has('nvim')
