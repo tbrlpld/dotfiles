@@ -109,6 +109,8 @@ function ConfigureForAyuLightTerminalColor()
 endfunction
 "call ConfigureForAyuLightTerminalColor()
 
+" FZF preview window above file names for see more of the paths
+let g:fzf_preview_window = ['up:60%', 'ctrl-/']
 let g:python_highlight_all = 1
 if has('nvim')
     let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
