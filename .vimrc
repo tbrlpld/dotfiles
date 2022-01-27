@@ -108,6 +108,7 @@ function ConfigureForAyuLightTerminalColor()
     hi NERDTreeExecFile ctermfg=3
 endfunction
 "call ConfigureForAyuLightTerminalColor()
+hi ColorColumn ctermbg=0
 
 let g:python_highlight_all = 1
 if has('nvim')
