@@ -107,7 +107,12 @@ function ConfigureForAyuLightTerminalColor()
     hi markdownCodeDelimiter ctermfg=4
     hi NERDTreeExecFile ctermfg=3
 endfunction
-"call ConfigureForAyuLightTerminalColor()
+function ConfigureForDefaultTerminalColor()
+    colorscheme default
+    hi CursorLine cterm=none ctermbg=255
+    hi CursorLineNr cterm=none ctermbg=255
+endfunction
+call ConfigureForDefaultTerminalColor()
 
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
