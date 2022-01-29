@@ -110,8 +110,8 @@ function ConfigureForAyuLightTerminalColor()
 endfunction
 function ConfigureForDefaultTerminalColor()
     colorscheme default
-    hi CursorLine cterm=none ctermbg=255
-    hi CursorLineNr cterm=none ctermbg=255
+    hi CursorLine cterm=none ctermbg=7
+    hi CursorLineNr cterm=none ctermbg=7
 endfunction
 call ConfigureForDefaultTerminalColor()
 
