@@ -6,7 +6,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'arcticicestudio/nord-vim'
-Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
@@ -27,6 +26,7 @@ set backspace=indent,eol,start
 set cursorline
 set clipboard=unnamed  " yank and paste will use system clipboard
 set cmdheight=1
+set complete=.,b,u,]  " pull from keywords in the current file, other buffers (closed or still open), and from the current tags file.
 set completeopt=menu,preview
 set diffopt=vertical
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -56,6 +56,7 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set switchbuf=usetab
 set tabstop=4
 set wildmenu " make tab completion for files/buffers act like bash
+set wildmode=longest,list:longest  " make tab completion similar to zsh
 
 " Colors
 syntax on
@@ -116,11 +117,7 @@ if has('nvim')
     let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
 endif
 
-" Set default supertab completion to be context aware.
-" This tries the omni completionm but also falls back to local keyword
-" completion.
-let g:SuperTabDefaultCompletionType = 'context'
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-tab>"
 
 " FUNCTIONS
 " Trim trailin whitespace
