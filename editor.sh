@@ -3,4 +3,4 @@ export EDITOR='/use/bin/vim'
 export VISUAL='/usr/bin/vim'
 
 # Not relly and editor, but I still put it here
-export BAT_THEME='ansi'
+export BAT_THEME='l33t'
