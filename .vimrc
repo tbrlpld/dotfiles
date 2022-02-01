@@ -158,3 +158,4 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 " KEY MAPS
 map <leader>n :call RenameFile()<cr>
 map <leader>t :NERDTreeFind % <cr>
+imap <tab> <c-p>
