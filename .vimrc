@@ -6,16 +6,17 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'arcticicestudio/nord-vim'
+Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
-Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
+Plug 'blueyed/vim-diminactive'
+Plug 'honza/vim-snippets'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'blueyed/vim-diminactive'
 call plug#end()
 
 set nocompatible " from garybernhardt
@@ -118,12 +119,6 @@ call ConfigureForDefaultTerminalColor()
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
 let g:python_highlight_all = 1
-if has('nvim')
-    let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
-endif
-
-let g:UltiSnipsExpandTrigger="<c-s>"
-let g:UltiSnipsListSnippets="<c-l>"
 
 " FUNCTIONS
 " Trim trailin whitespace
@@ -153,7 +148,7 @@ autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 " Omni complete: http://blog.fluther.com/django-vim/
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-" autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 " KEY MAPS
