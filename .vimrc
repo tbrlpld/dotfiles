@@ -122,7 +122,8 @@ if has('nvim')
     let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
 endif
 
-let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsListSnippets="<c-l>"
 
 " FUNCTIONS
 " Trim trailin whitespace
@@ -158,4 +159,3 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 " KEY MAPS
 map <leader>n :call RenameFile()<cr>
 map <leader>t :NERDTreeFind % <cr>
-imap <tab> <c-p>
