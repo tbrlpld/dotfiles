@@ -1,6 +1,3 @@
-# Poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
 # Disable creation of .pyc (byte code files)
 export PYTHONDONTWRITEBYTECODE=1
 

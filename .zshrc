@@ -104,7 +104,7 @@ source ~/.dotfiles/aliases.sh
 source ~/.dotfiles/brew.sh
 source ~/.dotfiles/editor.sh
 source ~/.dotfiles/iterm-settings.sh
-source ~/.dotfiles/paths.sh
 source ~/.dotfiles/python-settings.sh
+source ~/.dotfiles/paths.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
