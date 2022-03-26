@@ -145,6 +145,8 @@ autocmd BufWritePre * call TrimWhiteSpace()
 
 autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 
+autocmd FileType python set colorcolumn=88
+
 " Omni complete: http://blog.fluther.com/django-vim/
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
