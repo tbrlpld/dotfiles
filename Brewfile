@@ -49,6 +49,7 @@ cask "flux"
 cask "gnucash"
 cask "gpg-suite"
 cask "imageoptim"
+cask "little-snitch"
 cask "session-manager-plugin"
 cask "signal"
 cask "spotify"
@@ -56,4 +57,10 @@ cask "timeular"
 cask "vagrant"
 cask "virtualbox"
 cask "vlc"
+cask "xbar"
 cask "zoom"
+mas "Bitwarden", id: 1352778147
+mas "Bear - Markdown Notes", id: 1091189122
+mas "Instapaper Save", id: 1481302432
+mas "Slack", id: 803453959
+mas "Harvest", id: 506189836
