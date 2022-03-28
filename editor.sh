@@ -1,6 +1,6 @@
 # Standard Editor
-export EDITOR='/use/bin/vim'
-export VISUAL='/usr/bin/vim'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Not relly and editor, but I still put it here
 export BAT_THEME='base16'
