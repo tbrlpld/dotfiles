@@ -8,13 +8,13 @@
         "revision": "aac61c6fa4be93e54226a6eb78ddbbf676cda729"
       },
       "homebrew/cask": {
-        "revision": "52e7a251fd9e760184b8c012443b291bed9c02ca"
+        "revision": "98223b40cfeca5df13340366e498549a0da07919"
       },
       "homebrew/core": {
-        "revision": "4fe0f10f89eca373348b7c2ef2f44a4571c34097"
+        "revision": "a64ca7f9ddd0c16d7a9c85da8d9ec27aff015f02"
       },
       "snyk/tap": {
-        "revision": "ff151ea6a6ce360558cb1a8b65ca1ce0e23c8d98"
+        "revision": "588adcdde17c206b63be3dbcaf05a039fa90d48b"
       }
     },
     "brew": {
@@ -1271,7 +1271,7 @@
         "bottle": false
       },
       "snyk/tap/snyk": {
-        "version": "1.883.0",
+        "version": "1.884.0",
         "bottle": false
       }
     },
@@ -1407,6 +1407,12 @@
         "options": {
           "full_name": "xbar"
         }
+      },
+      "authy": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "authy"
+        }
       }
     },
     "mas": {
@@ -1438,7 +1444,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.3",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4fe0f10f89eca373348b7c2ef2f44a4571c34097",
+        "Homebrew/homebrew-core": "a64ca7f9ddd0c16d7a9c85da8d9ec27aff015f02",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.2.1",
         "macOS": "12.3"
