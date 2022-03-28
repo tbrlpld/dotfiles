@@ -64,3 +64,4 @@ mas "Bear - Markdown Notes", id: 1091189122
 mas "Instapaper Save", id: 1481302432
 mas "Slack", id: 803453959
 mas "Harvest", id: 506189836
+mas "Magnet", id: 441258766
