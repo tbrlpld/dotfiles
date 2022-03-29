@@ -8,13 +8,13 @@
         "revision": "aac61c6fa4be93e54226a6eb78ddbbf676cda729"
       },
       "homebrew/cask": {
-        "revision": "bfe1b1ccea2fa78a0e89a19b2480fb661b288738"
+        "revision": "f80092d29785ef3f17d17f58758c4eac6e2afb44"
       },
       "homebrew/core": {
-        "revision": "9c63f0bae23a8c026b6b0aa57d9054cc30891df4"
+        "revision": "c2bccbce3dcec243df889431312c74980dd835ca"
       },
       "snyk/tap": {
-        "revision": "588adcdde17c206b63be3dbcaf05a039fa90d48b"
+        "revision": "d2fb09e51e04dc66a8968cd03ffb33b9753c8a97"
       }
     },
     "brew": {
@@ -1271,7 +1271,7 @@
         "bottle": false
       },
       "snyk/tap/snyk": {
-        "version": "1.884.0",
+        "version": "1.886.0",
         "bottle": false
       }
     },
@@ -1413,6 +1413,12 @@
         "options": {
           "full_name": "authy"
         }
+      },
+      "imazing": {
+        "version": "2.14.6,15535",
+        "options": {
+          "full_name": "imazing"
+        }
       }
     },
     "mas": {
@@ -1427,7 +1433,7 @@
       },
       "Slack": {
         "id": "803453959",
-        "version": "4.24.1"
+        "version": "4.25.0"
       },
       "Harvest": {
         "id": "506189836",
@@ -1444,7 +1450,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.4",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "9c63f0bae23a8c026b6b0aa57d9054cc30891df4",
+        "Homebrew/homebrew-core": "c2bccbce3dcec243df889431312c74980dd835ca",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.3"
