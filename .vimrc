@@ -54,6 +54,7 @@ set nowritebackup
 set nolist
 set nowrap
 set number
+set relativenumber
 set signcolumn=no
 set scrolloff=3
 set shiftwidth=4
