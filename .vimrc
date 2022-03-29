@@ -17,6 +17,7 @@ Plug 'sirver/UltiSnips'
 Plug 'tpope/vim-commentary'
 Plug 'blueyed/vim-diminactive'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'tweekmonster/django-plus.vim'
