@@ -16,6 +16,7 @@ Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
 Plug 'tpope/vim-commentary'
 Plug 'blueyed/vim-diminactive'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 " Language support
