@@ -11,7 +11,7 @@
         "revision": "55a668f79a73fdb1a3c0ecf226e99fdae3023c0f"
       },
       "homebrew/core": {
-        "revision": "2921a951f8d0888bfae694282e94465ce2ab399f"
+        "revision": "9d0c9d8891bbcc226711a38ff6b18d9371b2dab0"
       },
       "snyk/tap": {
         "revision": "1a13a68a9f910490cb608fa6d41a404edaf5fc4d"
@@ -1446,7 +1446,8 @@
       "Boxy SVG": {
         "id": "611658502",
         "version": "3.81.0"
-      }
+      },
+      "Divvy - Window Manager": null
     }
   },
   "system": {
@@ -1454,7 +1455,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "2921a951f8d0888bfae694282e94465ce2ab399f",
+        "Homebrew/homebrew-core": "9d0c9d8891bbcc226711a38ff6b18d9371b2dab0",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.3.1"

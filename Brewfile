@@ -64,6 +64,7 @@ cask "xbar"
 mas "Bitwarden", id: 1352778147
 mas "Bear - Markdown Notes", id: 1091189122
 mas "Boxy SVG", id: 611658502
+mas "Divvy - Window Manager", id: 413857545
 mas "Instapaper Save", id: 1481302432
 mas "Slack", id: 803453959
 mas "Harvest", id: 506189836
