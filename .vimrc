@@ -153,6 +153,7 @@ autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
 
 autocmd BufRead,BufNewFile *.html set filetype=htmldjango
+autocmd BufRead,BufNewFile *.css set filetype=css
 
 autocmd FileType python set colorcolumn=88
 
