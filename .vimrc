@@ -17,6 +17,7 @@ Plug 'sirver/UltiSnips'
 Plug 'tpope/vim-commentary'
 Plug 'blueyed/vim-diminactive'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-repeat'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 " Language support
