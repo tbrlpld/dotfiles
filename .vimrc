@@ -20,6 +20,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-repeat'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+Plug 'chaoren/vim-wordmotion'
 " Language support
 Plug 'othree/html5.vim'
 Plug 'tweekmonster/django-plus.vim'
