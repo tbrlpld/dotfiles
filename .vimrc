@@ -43,7 +43,7 @@ set diffopt=vertical
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set expandtab
 set fixendofline
-set foldmethod=manual
+set foldmethod=indent
 set incsearch
 set ignorecase smartcase
 set hidden
