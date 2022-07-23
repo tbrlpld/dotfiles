@@ -75,59 +75,8 @@ set wildmode=longest,list:longest  " make tab completion similar to zsh
 " Colors
 syntax on
 colorscheme default
-function ConfigureForNordTerminalColor()
-    colorscheme nord
-    " hi Include ctermfg=1 cterm=bold
-    hi pythonFunctionCall ctermfg=3
-    hi Identifier ctermfg=9
-    hi Statement ctermfg=1
-    hi Conditional cterm=bold
-    hi Exception cterm=bold
-    hi Function ctermfg=5
-    hi Operator ctermfg=13
-    " " Darken active line and inactive windows.
-    " hi CursorLine ctermbg=16 cterm=none
-    " hi ColorColumn ctermbg=16
-    hi TabLine ctermfg=16 ctermbg=8
-    hi TabLineFill ctermbg=8
-    hi TabLineSel ctermfg=6 ctermbg=none
-endfunction
-function ConfigureForAyuLightTerminalColor()
-    colorscheme nord
-    hi pythonFunctionCall ctermfg=3
-    hi Identifier ctermfg=9
-    hi Statement ctermfg=1
-    hi Conditional cterm=bold
-    hi Exception cterm=bold
-    hi Function ctermfg=3
-    hi Operator ctermfg=13
-    hi Delimiter ctermfg=13
-    hi Comment ctermfg=6
-    hi CursorLine ctermbg=255 cterm=none
-    hi ColorColumn ctermbg=255
-    hi Visual ctermbg=254
-    hi PreProc ctermfg=none
-    hi TabLineSel ctermbg=none ctermfg=none cterm=bold
-    hi TabLine ctermbg=254 ctermfg=none
-    hi TabLineFill ctermbg=254
-    hi StatusLine ctermbg=254 ctermfg=none cterm=bold
-    hi StatusLineNC ctermbg=254 ctermfg=none cterm=none
-    hi LineNr ctermfg=248
-    hi ErrorMsg ctermfg=15
-    hi htmlArg ctermfg=6
-    hi djangoArgument ctermfg=4
-    hi djangoStatement ctermfg=2
-    hi markdownCode ctermfg=3
-    hi markdownCodeBlock ctermfg=3
-    hi markdownCodeDelimiter ctermfg=4
-    hi NERDTreeExecFile ctermfg=3
-endfunction
-function ConfigureForDefaultTerminalColor()
-    colorscheme default
-    hi CursorLine cterm=none ctermbg=7
-    hi CursorLineNr cterm=none ctermbg=7
-endfunction
-call ConfigureForDefaultTerminalColor()
+hi CursorLine cterm=none ctermbg=7
+hi CursorLineNr cterm=none ctermbg=7
 
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
