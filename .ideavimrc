@@ -35,3 +35,4 @@ map Q gq
 
 "
 set ignorecase
+set clipboard=unnamed  " yank and paste will use system clipboard
