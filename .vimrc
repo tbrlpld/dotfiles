@@ -110,12 +110,6 @@ autocmd BufRead,BufNewFile *.css set filetype=css
 
 autocmd FileType python set colorcolumn=88
 
-" Omni complete: http://blog.fluther.com/django-vim/
-" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-" autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-" autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
-" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-
 " KEY MAPS
 map <leader>n :call RenameFile()<cr>
 map <leader>t :NERDTreeFind % <cr>
