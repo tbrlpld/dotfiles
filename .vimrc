@@ -75,8 +75,6 @@ set wildmode=longest,list:longest  " make tab completion similar to zsh
 " Colors
 syntax on
 colorscheme default
-hi CursorLine cterm=none ctermbg=7
-hi CursorLineNr cterm=none ctermbg=7
 
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
