@@ -110,5 +110,5 @@ source ~/.dotfiles/paths.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if type "heroku" > /dev/null; then
-    heroku autocomplete:script zsh >> /dev/null
+    $(heroku autocomplete:script zsh)
 fi
