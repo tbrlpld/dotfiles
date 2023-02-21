@@ -74,7 +74,7 @@ set wildmode=longest,list:longest  " make tab completion similar to zsh
 
 " Colors
 syntax on
-colorscheme default
+colorscheme morning
 
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
@@ -111,6 +111,7 @@ autocmd FileType python set colorcolumn=88
 " KEY MAPS
 map <leader>n :call RenameFile()<cr>
 map <leader>t :NERDTreeFind % <cr>
+
 
 " COC
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
