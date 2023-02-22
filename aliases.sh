@@ -6,3 +6,6 @@ alias la='ll -a'
 # Python virtual environments
 alias cve="python -m venv .venv"
 alias ave="source .venv/bin/activate"
+
+# Git
+alias gdmb='git branch -d $(git branch --format "%(refname:lstrip=2)" --merged)'
