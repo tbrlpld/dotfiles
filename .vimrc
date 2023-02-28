@@ -12,7 +12,6 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
-Plug 'arcticicestudio/nord-vim'
 " Plug 'ervandew/supertab'
 Plug 'sirver/UltiSnips'
 Plug 'tpope/vim-commentary'
@@ -73,12 +72,14 @@ set wildmenu " make tab completion for files/buffers act like bash
 set wildmode=longest,list:longest  " make tab completion similar to zsh
 
 " Colors
-colorscheme default
+colorscheme shine
 syntax on
 
 " FZF preview window above file names for see more of the paths
 let g:fzf_preview_window = ['up:60%', 'ctrl-/']
+" python
 let g:python_highlight_all = 1
+let g:python3_host_prog = '~/.pyenv/versions/nvim/bin/python'
 
 " FUNCTIONS
 " Trim trailin whitespace
