@@ -11,10 +11,16 @@ set vim-highlightedyank
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=3
 
-" Do incremental searching.
-set incsearch
-" Highlight all search results
-set hlsearch
+set incsearch  " Do incremental searching.
+set hlsearch  " Highlight all search results
+set ignorecase
+set clipboard=unnamed  " yank and paste will use system clipboard
+set smartcase  " case sensitive search only if there is a capital letter
+set smartindent  " auto indent
+
+" IDEA only options
+set ideajoin  " join lines like in IDE
+set ideastatusicon=gray
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -31,7 +37,3 @@ map Q gq
 
 
 " Find more examples here: https://jb.gg/share-ideavimrc
-
-"
-set ignorecase
-set clipboard=unnamed  " yank and paste will use system clipboard
