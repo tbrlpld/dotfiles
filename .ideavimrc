@@ -17,6 +17,7 @@ set ignorecase
 set clipboard=unnamed  " yank and paste will use system clipboard
 set smartcase  " case sensitive search only if there is a capital letter
 set smartindent  " auto indent
+set relativenumber
 
 " IDEA only options
 set ideajoin  " join lines like in IDE
