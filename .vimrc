@@ -72,7 +72,7 @@ set wildmenu " make tab completion for files/buffers act like bash
 set wildmode=longest,list:longest  " make tab completion similar to zsh
 
 " Colors
-colorscheme shine
+colorscheme default
 syntax on
 
 " FZF preview window above file names for see more of the paths
