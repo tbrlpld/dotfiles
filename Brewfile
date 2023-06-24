@@ -45,6 +45,8 @@ cask "bartender"
 cask "dbeaver-community"
 # Virtual dev machines
 cask "docker"
+# Browser
+cask "duckduckgo"
 # Design
 cask "figma"
 # Dev browser
@@ -74,8 +76,6 @@ mas "Bitwarden", id: 1352778147
 mas "Bear - Markdown Notes", id: 1091189122
 # SVGs
 mas "Boxy SVG", id: 611658502
-# Browser
-mas "DuckDuckGo Privacy Browser", id:663592361
 # Window management
 mas "Divvy - Window Manager", id: 413857545
 # Read later
