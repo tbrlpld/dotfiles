@@ -1,71 +1,89 @@
+# Add extra sources via `brew tap`
+#
+# Heroku CLI (hosting)
 tap "heroku/brew"
+# Homebrew itself
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "snyk/tap"
-brew "python@3.9"
-brew "awscli"
+
+# Install via `brew install`
+#
+# `cat` alternative with syntax highlighting
 brew "bat"
-brew "pkg-config"
-brew "ddrescue"
-brew "fabric"
+# Fuzzy finder
 brew "fzf"
+# Heroku CLI (hosting access)
+brew "heroku"
+# Version control
 brew "git"
+# Better diffing
 brew "git-delta"
-brew "libtool"
-brew "guile"
-brew "unbound"
-brew "gnutls"
-brew "graphviz"
-brew "krb5"
-brew "libxml2"
-brew "libxmlsec1"
-brew "nghttp2"
-brew "neovim"
+# Node.js version management
 brew "nvm"
-brew "python@3.10"
+# Install standalone Python apps
 brew "pipx"
-brew "poetry"
-brew "postgresql"
+# Python versoin management
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "ripgrep"
+# Remote file transfer
 brew "rsync"
-brew "ruby"
-brew "testdisk"
+# File search
 brew "the_silver_searcher"
-brew "tmux"
+# File editing
 brew "vim"
-brew "heroku/brew/heroku"
-brew "snyk/tap/snyk"
-cask "adobe-acrobat-reader"
+
+# Install apps via `brew install --cask`
+#
+# Flash cards learning
 cask "anki"
+# Two factor authentication
 cask "authy"
-cask "aws-vault"
+# Menu item management
 cask "bartender"
+# Database GUI
 cask "dbeaver-community"
+# Virtual dev machines
+cask "docker"
+# Design
 cask "figma"
+# Dev browser
 cask "firefox"
+# Screen dimming based on daylight
 cask "flux"
+# Finances
 cask "gnucash"
-cask "gpg-suite"
+# iPhone access and backups
 cask "imazing"
+# Image optization
 cask "imageoptim"
-cask "little-snitch"
-cask "session-manager-plugin"
+# IDE
+cask "pycharm"
+# Messaging
 cask "signal"
+# Music
 cask "spotify"
-cask "timeular"
-cask "vagrant"
-cask "virtualbox"
-cask "vlc"
-cask "xbar"
-# cask "zoom"
+# Video conferencing
+cask "zoom"
+
+# Install apps from the App Store `mas install`
+#
+# Password manager
 mas "Bitwarden", id: 1352778147
+# Notes
 mas "Bear - Markdown Notes", id: 1091189122
+# SVGs
 mas "Boxy SVG", id: 611658502
+# Browser
+mas "DuckDuckGo Privacy Browser", id:663592361
+# Window management
 mas "Divvy - Window Manager", id: 413857545
+# Read later
+mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
-mas "Slack", id: 803453959
-mas "Harvest", id: 506189836
-mas "Magnet", id: 441258766
+# Team communication
+mas "Slack for Desktop", id: 803453959
+# Time tracking
+mas "Toggle Track: Hours & Time Log", id: 1291898086
+# Apple development environment
+mas "Xcode", id: 497799835
