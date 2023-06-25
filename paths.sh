@@ -12,12 +12,12 @@ export PATH="/usr/local/opt/m4/bin:$PATH"
 # ?
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# Poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
 # Heroku
 export PATH="/usr/local/opt/heroku-node/bin:$PATH"
 # NVM
 # This is only to ensure that NVMs Node version comes before Heroku's in the path
 nvm deactivate --silent
 nvm use default --silent
+
+# Docker
+export PATH="$PATH:$HOME/.docker/bin"
