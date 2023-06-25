@@ -43,6 +43,8 @@ cask "authy"
 cask "bartender"
 # Database GUI
 cask "dbeaver-community"
+# Documentation browser
+cask "dash"
 # Virtual dev machines
 cask "docker"
 # Browser
@@ -78,6 +80,8 @@ mas "Bear - Markdown Notes", id: 1091189122
 mas "Boxy SVG", id: 611658502
 # Window management
 mas "Divvy - Window Manager", id: 413857545
+# PDF Reading
+mas "Highlights", id: 1498912833
 # Read later
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
@@ -87,3 +91,4 @@ mas "Slack for Desktop", id: 803453959
 mas "Toggle Track: Hours & Time Log", id: 1291898086
 # Apple development environment
 mas "Xcode", id: 497799835
+
