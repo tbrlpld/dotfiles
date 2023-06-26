@@ -85,6 +85,8 @@ mas "Highlights", id: 1498912833
 # Read later
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
+# Project management
+mas "monday.com", id: 1298450641
 # Team communication
 mas "Slack for Desktop", id: 803453959
 # Time tracking
