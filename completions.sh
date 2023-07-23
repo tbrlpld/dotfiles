@@ -5,7 +5,8 @@ then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
   autoload -Uz compinit
-  compinit
+  # Make all files found be used without asking, use the option -u
+  compinit -u
 fi
 
 # NVM
