@@ -23,9 +23,19 @@ export PATH="/usr/local/opt/m4/bin:$PATH"
 # ?
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
+# Pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Heroku
 export PATH="/usr/local/opt/heroku-node/bin:$PATH"
 
 # Docker
 export PATH="$PATH:$HOME/.docker/bin"
 
+# NVM
+# This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
+# This is only to ensure that NVMs Node version comes before Heroku's in the path
+nvm deactivate --silent
+nvm use default --silent

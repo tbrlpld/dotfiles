@@ -1,11 +1,20 @@
-# Homebrew
-#
+# Standard Editor
+export EDITOR='vim'
+export VISUAL='vim'
+
+# Not relly and editor, but I still put it here
+export BAT_THEME='base16'
+
+# Python
+# Disable creation of .pyc (byte code files)
+export PYTHONDONTWRITEBYTECODE=1
+# Pip requires to have an active virtual environment to install packages
+export PIP_REQUIRE_VIRTUALENV=true
+# Use pyenv controlled python3 for pipx.
+export PIPX_DEFAULT_PYTHON=$(pyenv which python3)
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
-# This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
-# This loads nvm bash_completion
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
 # Add the following to your .bashrc or equivalent:
 export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
