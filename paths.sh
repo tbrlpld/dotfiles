@@ -3,12 +3,16 @@ export PATH="$PATH:$HOME/.local/bin" # Created by `userpath` on 2019-11-23 05:15
 
 # Homebrew
 export PATH="/usr/local/sbin:$PATH"
-HOMEBREW_PREFIX_APPLE_SILICON="/opt/homebrew"
-if [ -d $HOMEBREW_PREFIX_APPLE_SILICON ]; then
+# Check platform
+if [[ $(uname -m) == 'arm64' ]]; then
+    # Check if homebrew directory exists / homebrew is installed.
+    HOMEBREW_PREFIX_APPLE_SILICON="/opt/homebrew"
+    if [ -d $HOMEBREW_PREFIX_APPLE_SILICON ]; then
 
-    export PATH="$HOMEBREW_PREFIX_APPLE_SILICON/bin:$PATH"
-else
-    echo "NO HOMEBREW"
+        export PATH="$HOMEBREW_PREFIX_APPLE_SILICON/bin:$PATH"
+    else
+        echo "NO HOMEBREW"
+    fi
 fi
 # m4
 # m4 is keg-only, which means it was not symlinked into /usr/local,
