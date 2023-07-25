@@ -35,6 +35,8 @@ brew "vim"
 
 # Install apps via `brew install --cask`
 #
+# Automation and text expansion
+cask "alfred"
 # Flash cards learning
 cask "anki"
 # Two factor authentication
