@@ -80,6 +80,8 @@ mas "Bitwarden", id: 1352778147
 mas "Bear - Markdown Notes", id: 1091189122
 # SVGs
 mas "Boxy SVG", id: 611658502
+# Better date and time display
+mas "Dato", id: 1470584107
 # Window management
 mas "Divvy - Window Manager", id: 413857545
 # PDF Reading
@@ -95,4 +97,5 @@ mas "Slack for Desktop", id: 803453959
 mas "Toggle Track: Hours & Time Log", id: 1291898086
 # Apple development environment
 mas "Xcode", id: 497799835
+
 
