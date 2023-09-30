@@ -23,7 +23,7 @@ brew "git-delta"
 brew "nvm"
 # Install standalone Python apps
 brew "pipx"
-# Python versoin management
+# Python version management
 brew "pyenv"
 brew "pyenv-virtualenv"
 # Remote file transfer
@@ -47,8 +47,6 @@ cask "bartender"
 cask "dbeaver-community"
 # Documentation browser
 cask "dash"
-# Virtual dev machines
-cask "docker"
 # Browser
 cask "duckduckgo"
 # Design
@@ -63,6 +61,8 @@ cask "gnucash"
 cask "imazing"
 # Image optization
 cask "imageoptim"
+# Virtual machines and containers
+cask "orbstack"
 # IDE
 cask "pycharm"
 # Messaging
