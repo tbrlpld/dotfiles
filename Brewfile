@@ -23,7 +23,7 @@ brew "git-delta"
 brew "nvm"
 # Install standalone Python apps
 brew "pipx"
-# Python versoin management
+# Python version management
 brew "pyenv"
 brew "pyenv-virtualenv"
 # Remote file transfer
@@ -47,8 +47,6 @@ cask "bartender"
 cask "dbeaver-community"
 # Documentation browser
 cask "dash"
-# Virtual dev machines
-cask "docker"
 # Browser
 cask "duckduckgo"
 # Design
@@ -63,6 +61,8 @@ cask "gnucash"
 cask "imazing"
 # Image optization
 cask "imageoptim"
+# Virtual machines and containers
+cask "orbstack"
 # IDE
 cask "pycharm"
 # Messaging
@@ -80,6 +80,8 @@ mas "Bitwarden", id: 1352778147
 mas "Bear - Markdown Notes", id: 1091189122
 # SVGs
 mas "Boxy SVG", id: 611658502
+# Better date and time display
+mas "Dato", id: 1470584107
 # Window management
 mas "Divvy - Window Manager", id: 413857545
 # PDF Reading
@@ -87,10 +89,13 @@ mas "Highlights", id: 1498912833
 # Read later
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
+# Project management
+mas "monday.com", id: 1298450641
 # Team communication
 mas "Slack for Desktop", id: 803453959
 # Time tracking
 mas "Toggle Track: Hours & Time Log", id: 1291898086
 # Apple development environment
 mas "Xcode", id: 497799835
+
 
