@@ -22,6 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'chaoren/vim-wordmotion'
 " Language support
 Plug 'othree/html5.vim'
+Plug 'alvan/vim-closetag'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript'
