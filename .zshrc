@@ -8,4 +8,4 @@ source ~/.dotfiles/completions.sh
 ssh-add --apple-load-keychain &> /dev/null
 
 # Enable the fzf shell integration. See https://github.com/junegunn/fzf?tab=readme-ov-file#setting-up-shell-integration
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
