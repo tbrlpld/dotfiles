@@ -4,8 +4,6 @@
 tap "heroku/brew"
 # Homebrew itself
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 
 # Install via `brew install`
 #
