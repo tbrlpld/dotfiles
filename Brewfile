@@ -39,8 +39,6 @@ brew "vim"
 cask "alfred"
 # Flash cards learning
 cask "anki"
-# Two factor authentication
-cask "authy"
 # Menu item management
 cask "bartender"
 # Database GUI
@@ -89,13 +87,10 @@ mas "Highlights", id: 1498912833
 # Read later
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
-# Project management
-mas "monday.com", id: 1298450641
 # Team communication
 mas "Slack for Desktop", id: 803453959
 # Time tracking
 mas "Toggle Track: Hours & Time Log", id: 1291898086
 # Apple development environment
 mas "Xcode", id: 497799835
-
 
