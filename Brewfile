@@ -57,8 +57,6 @@ cask "gnucash"
 cask "imazing"
 # Image optization
 cask "imageoptim"
-# Virtual machines and containers
-cask "orbstack"
 # IDE
 cask "pycharm"
 # Messaging
