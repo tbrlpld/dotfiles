@@ -24,6 +24,8 @@ export PATH="/usr/local/opt/m4/bin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
