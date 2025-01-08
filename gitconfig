@@ -1,7 +1,7 @@
 [user]
     name = Tibor Leupold
     email = tibor@lpld.io
-	signingkey = /Users/tibor/.ssh/id_rsa_github.pub
+	signingkey = ~/.ssh/id_rsa_github.pub
 [github]
     username = tbrlpld
 [merge]
