@@ -37,8 +37,6 @@ brew "vim"
 cask "alfred"
 # Flash cards learning
 cask "anki"
-# Menu item management
-cask "bartender"
 # Database GUI
 cask "dbeaver-community"
 # Documentation browser
