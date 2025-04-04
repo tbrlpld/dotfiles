@@ -1,10 +1,10 @@
 "" PLUGINS
-set commentary
-set surround
-set NERDTree
-set vim-paragraph-motion
-set vim-indent-object
-set vim-highlightedyank
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'dbakker/vim-paragraph-motion'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'machakann/vim-highlightedyank'
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
@@ -15,6 +15,7 @@ set incsearch  " Do incremental searching.
 set hlsearch  " Highlight all search results
 set ignorecase
 set clipboard=unnamed  " yank and paste will use system clipboard
+set clipboard^=ideaput  " Find more examples here: https://jb.gg/share-ideavimrc
 set smartcase  " case sensitive search only if there is a capital letter
 set smartindent  " auto indent
 set number  " show line numbers
@@ -27,6 +28,8 @@ set ideastatusicon=gray
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+map gd <Action>(GotoDeclaration)
+
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 "map \r <Action>(ReformatCode)
@@ -36,7 +39,3 @@ map Q gq
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
-
-
-" Find more examples here: https://jb.gg/share-ideavimrc
-set clipboard^=ideaput
