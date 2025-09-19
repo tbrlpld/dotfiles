@@ -9,6 +9,8 @@ tap "homebrew/bundle"
 #
 # `cat` alternative with syntax highlighting
 brew "bat"
+# Keyboard shortcuts and other eutomation
+brew "bettertouchtool"
 # Fuzzy finder
 brew "fzf"
 # Heroku CLI (hosting access)
