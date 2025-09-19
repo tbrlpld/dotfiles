@@ -37,6 +37,10 @@ brew "vim"
 cask "alfred"
 # Flash cards learning
 cask "anki"
+# Two factor authentication
+cask "authy"
+# Brave browser
+cask brave-browser
 # Database GUI
 cask "dbeaver-community"
 # Documentation browser
@@ -55,12 +59,16 @@ cask "gnucash"
 cask "imazing"
 # Image optization
 cask "imageoptim"
-# IDE
+# Virtual machines and containers
+cask "orbstack"
+# Python IDE
 cask "pycharm"
 # Messaging
 cask "signal"
 # Music
 cask "spotify"
+# Web IDE
+cask "webstorm"
 # Video conferencing
 cask "zoom"
 
@@ -78,9 +86,6 @@ mas "Dato", id: 1470584107
 mas "Divvy - Window Manager", id: 413857545
 # PDF Reading
 mas "Highlights", id: 1498912833
-# Read later
-mas "Instapaper", id: 288545208
-mas "Instapaper Save", id: 1481302432
 # Team communication
 mas "Slack for Desktop", id: 803453959
 # Time tracking
