@@ -35,8 +35,6 @@ brew "vim"
 #
 # Automation and text expansion
 cask "alfred"
-# Flash cards learning
-cask "anki"
 # Two factor authentication
 cask "authy"
 # Brave browser
