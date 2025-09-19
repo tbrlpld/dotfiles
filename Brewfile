@@ -40,7 +40,7 @@ cask "anki"
 # Two factor authentication
 cask "authy"
 # Brave browser
-cask brave-browser
+cask "brave-browser"
 # Database GUI
 cask "dbeaver-community"
 # Documentation browser
