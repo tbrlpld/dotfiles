@@ -1,7 +1,7 @@
 [user]
     name = Tibor Leupold
     email = tibor@lpld.io
-	signingkey = ~/.ssh/id_rsa_github.pub
+	signingkey = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIyT/6OIwX/Gw6MOfd7as8fdcWr/OAesvIE3AV6FJE9v5EgV8vznp4hEeThc5Mm33F+KiXUhB2SEXo4CT89PvK8Fp7FRLu4aTvkDZwHowjxxyS3VYpZF7BNnwS0Kcl7nl7wr4PYuccYjyRkvEPiyOoXBU8eDM6c9KZ7xQYB2mcvm/RPDR+9fwchS8OMiHCP8Aqbeiw/gIDpiFnFuztzqJRQv58fd9eYUanI/YK8wJhaKnxaCi3Ftb5cYE54SK7y5Uw+ZHeIiz8KZwDFaXo01ilYYGhu3r8sQmUXuHyJ2AaLd+XLXT0lCr2GA+NA3AUHo6mTyE+hiDh9isOp7A82wu7RLvkQk5In93gKPRClUZ4AsdkS905Gb1oaM/eCvGDv+NavVOl5cvZycvrGs6bs3/QQzTkgomuG7P29Tc4ggXjuD4pYCtSUzdlu/w4IvP04R6EOwJ1NeuBUSiQ7YcxzkyMzyPXe8cq1DwXNV2f+bjvZaJVDZw7yv+hYCt/T5XmcGE= tibor@Tibors-MacBook-Pro.local"
 [github]
     username = tbrlpld
 [merge]
@@ -37,3 +37,5 @@
 	format = ssh
 [commit]
 	gpgsign = true
+[gpg "ssh"]
+	allowedSigners = ~/.ssh/allowedSigners
