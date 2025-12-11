@@ -54,7 +54,7 @@ cask "bettertouchtool"
 cask "dbeaver-community"
 
 # Documentation browser
-cask "dash"
+cask "dash@6"
 
 # Browser
 cask "duckduckgo"
