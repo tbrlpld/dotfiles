@@ -74,6 +74,9 @@ cask "imazing"
 # Image optization
 cask "imageoptim"
 
+# Automated file organization
+cask "hazel"
+
 # Virtual machines and containers
 cask "orbstack"
 
